@@ -3,6 +3,8 @@ package homework1.task3;
 import java.util.Arrays;
 import java.util.Collections;
 
+import static java.lang.Math.floor;
+
 public class Kata {
     public static Double[] sortItOut(Double[] array) {
         int evenNumber = 0;
@@ -11,7 +13,7 @@ public class Kata {
         int countOdd = 0;
 
         for (Double aDouble : array) {
-            if (Math.floor(aDouble) % 2 == 0) {
+            if (floor(aDouble) % 2 == 0) {
                 evenNumber++;
             } else {
                 oddNumber++;
@@ -21,10 +23,8 @@ public class Kata {
         Double[] odd = new Double[oddNumber];
 
         for (Double aDouble : array) {
-
-            Math.floor(aDouble);
-
-            if (Math.floor(aDouble) % 2 == 0) {
+            floor(aDouble);
+            if (floor(aDouble) % 2 == 0) {
                 even[countEven++] = aDouble;
             } else {
                 odd[countOdd++] = aDouble;

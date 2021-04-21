@@ -6,12 +6,13 @@ import java.util.Queue;
 
 public class Main {
     public static void main(String[] args) {
-        Queue<Integer> queue = new PriorityQueue<>(10, new Comparator<Integer>() {
-            @Override
-            public int compare(Integer n1, Integer n2) {
-                return n2 - n1;
-            }
-        });
+        Queue<Integer> queue = new PriorityQueue<>(10,
+                new Comparator<>() {
+                    @Override
+                    public int compare(Integer n1, Integer n2) {
+                        return n2 - n1;
+                    }
+                });
 
         for (int i = 0; i < 10; i++) {
             queue.offer((int) (Math.random() * 100));

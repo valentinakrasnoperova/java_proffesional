@@ -18,8 +18,11 @@ public class Main {
                 list.add(str);
             }
         } while (!str.equals("end"));
+
         Collections.sort(list);
-        for (String str1 : list) {
+        Set<String> unique = new HashSet<>(list);
+
+        for (String str1 : unique) {
             System.out.print(str1 + "\n");
         }
         System.out.println("Size is: " + list.size());

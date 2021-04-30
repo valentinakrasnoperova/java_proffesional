@@ -11,7 +11,8 @@ public class Java {
         BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
         PrintWriter newPrintWriter = new PrintWriter(new FileWriter(file, false));
         BufferedReader newBufferedReader = new BufferedReader(new FileReader(file));
-
+        Pattern pattern;
+        Matcher matcher;
         printWriter.write("The precise date of Easter has at times been A matter of contention.It is cultural holiday of fertility!But how do rabbit and eggs relate to the Easter?");
         printWriter.flush();
         printWriter.close();
@@ -20,8 +21,9 @@ public class Java {
         String str = bufferedReader.readLine();
         bufferedReader.close();
 
-        Pattern pattern = Pattern.compile("(?<!\\S)(in|at|on|with|by|a|an|the|of|and)(?!\\S)", Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
-        Matcher matcher = pattern.matcher(str);
+
+        pattern = Pattern.compile("(?<!\\S)(in|at|on|with|by|a|an|the|of|and)(?!\\S)", Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
+        matcher = pattern.matcher(str);
         newPrintWriter.write(matcher.replaceAll("Java"));
         newPrintWriter.flush();
         newPrintWriter.close();

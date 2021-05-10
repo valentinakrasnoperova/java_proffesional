@@ -14,12 +14,12 @@ public class Main {
         Calendar calendar1 = Calendar.getInstance();
         Calendar calendar2 = Calendar.getInstance();
 
-        calendar2.set(Calendar.YEAR, 2003);
-        calendar2.set(Calendar.MONTH, 11);
-        calendar2.set(Calendar.DATE, 2);
+        calendar2.set(Calendar.YEAR, 1979);
+        calendar2.set(Calendar.MONTH, 9);
+        calendar2.set(Calendar.DATE, 12);
         calendar2.set(Calendar.HOUR_OF_DAY, 3);
         calendar2.set(Calendar.MINUTE, 0);
-        calendar2.set(Calendar.SECOND, 0);
+        calendar2.set(Calendar.SECOND, 2);
 
         calendar1.set(Calendar.YEAR, currentCalendar.get(Calendar.YEAR) - calendar2.get(Calendar.YEAR));
         calendar1.set(Calendar.MONTH, currentCalendar.get(Calendar.MONTH) - calendar2.get(Calendar.MONTH));

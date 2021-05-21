@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<city size="small" xmlns="">Lviv
-    <street>Naukova</street>
-    <house>33</house>
-</city>
+<?xml version="1.0" encoding="UTF-8"?><city size="small">Lviv</city><street>Naukova</street><house>33</house>
